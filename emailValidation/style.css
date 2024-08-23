@@ -1,0 +1,97 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+     
+}
+ 
+     
+body{
+    background: linear-gradient(to right,#070626,#2d609a,#1ab9d8);
+    color: #fff;
+    
+    height: 100vh;
+    
+
+ }
+
+.container{
+ width: 400px;
+ background-color: #ffffff;
+ padding: 50px 30px;
+ position: absolute;
+ transform: translate(-50%,-50%);
+ top:50%;
+ left: 50%;
+ border-radius:10px;
+ box-shadow:25px 25px 30px rgb(0,0,0,0,0.15);
+ color:#1111;
+ animation: conatierAnimation 2s ease;
+ 
+}
+@keyframes conatierAnimation{
+    0%{
+        opacity:1;
+        transform:translate(-50%,-60%);
+    }
+ 100%{
+    opacity: 1;
+    transform:translate(-50%,-50%);
+   }
+}
+
+label, input, #error-msg{
+    font-family: 'Courier New', Courier, monospace;
+    display: none;
+    color: RED;
+    position:relative;
+    font-size: 14px;
+    padding-top:10px;
+}
+label{
+    display:block;
+    font-weight: 500;
+    margin-bottom:10px;
+    color: #06101a;
+    
+}
+
+input[type="email"]{
+ display:block;
+ border: 2px solid rgb(31, 24, 122);
+ width:88%;
+ height: 50px;
+ border-radius:5px;
+ outline:none;
+ letter-spacing:0.5px;
+ font-weight:400;
+ padding:5px;
+}
+
+#error-msg {
+    display: none; 
+    color: RED;
+    font-size: 14px;
+}
+
+
+#icon{
+    float:right;
+    height: 50px;
+    position:relative;
+    font-size: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
